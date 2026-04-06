@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolar Herbs Guide</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f2; color: #2d3e2d; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .card { background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-width: 400px; width: 100%; border-top: 10px solid #4a7c44; overflow: hidden; }
+        .header { padding: 20px; text-align: center; background: #f9fff8; }
+        h1 { color: #4a7c44; margin: 10px 0; }
+        .stats { display: flex; justify-content: space-around; padding: 15px; border-bottom: 1px solid #eee; font-weight: bold; }
+        .content { padding: 20px; line-height: 1.6; }
+        .fact { background: #edf3ec; padding: 15px; border-radius: 10px; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <small>KOLAR HERBS NURSERY</small>
+            <h1 id="name">Welcome!</h1>
+        </div>
+        <div class="stats">
+            <div>☀️ <span id="sun">--</span></div>
+            <div>💧 <span id="water">--</span></div>
+        </div>
+        <div class="content">
+            <p id="fact" class="fact">Scan a plant QR code to see details!</p>
+        </div>
+    </div>
+    <script>
+        const plants = {
+            'stevia': { n: 'Stevia', s: 'Full Sun', w: 'Medium', f: 'Stevia is 300x sweeter than sugar!' },
+            'ajwain': { n: 'Ajwain', s: 'Partial Sun', w: 'Low', f: 'Great for digestion and Indian cooking.' },
+            'asafoetida': { n: 'Asafoetida', s: 'Full Sun', w: 'Low', f: 'Also known as Hing, it comes from a giant fennel.' }
+        };
+        const id = new URLSearchParams(window.location.search).get('id');
+        if (id && plants[id]) {
+            document.getElementById('name').innerText = plants[id].n;
+            document.getElementById('sun').innerText = plants[id].s;
+            document.getElementById('water').innerText = plants[id].w;
+            document.getElementById('fact').innerText = plants[id].f;
+        }
+    </script>
+</body>
+</html>
