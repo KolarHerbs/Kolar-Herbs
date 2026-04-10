@@ -30,10 +30,43 @@
     </div>
     <script>
         const plants = {
-            'stevia': { n: 'Stevia', s: 'Full Sun', w: 'Medium', f: 'Stevia is 300x sweeter than sugar!' },
-            'ajwain': { n: 'Ajwain', s: 'Partial Sun', w: 'Low', f: 'Great for digestion and Indian cooking.' },
-            'asafoetida': { n: 'Asafoetida', s: 'Full Sun', w: 'Low', f: 'Also known as Hing, it comes from a giant fennel.' }
-        };
+    // MEDICINAL
+    'stevia': { n: 'Stevia', s: 'Full Sun', w: 'Medium', f: '300x sweeter than sugar with zero calories.' },
+    'ajwain': { n: 'Ajwain', s: 'Partial Sun', w: 'Low', f: 'Member of the carrot family; great for digestion.' },
+    'asafoetida': { n: 'Asafoetida (Hing)', s: 'Full Sun', w: 'Low', f: 'A giant fennel species known for its savory resin.' },
+    'insulin-plant': { n: 'Insulin Plant', s: 'Partial Shade', w: 'High', f: 'Traditionally used in Ayurveda to manage blood sugar.' },
+    'rudraksha': { n: 'Rudraksha', s: 'Full Sun', w: 'Medium', f: 'Sacred tree; the seeds are used for prayer beads.' },
+    'black-pepper': { n: 'Black Pepper', s: 'Shade/Partial', w: 'High', f: 'The "King of Spices" grows as a beautiful climbing vine.' },
+    'patharchatta': { n: 'Patharchatta', s: 'Full Sun', w: 'Low', f: 'A medicinal succulent used for kidney stone relief.' },
+    'curry-leaf': { n: 'Curry Leaf', s: 'Full Sun', w: 'Medium', f: 'Essential for aromatic cooking and hair health.' },
+    'ashwagandha': { n: 'Ashwagandha', s: 'Full Sun', w: 'Low', f: 'A powerful adaptogen used for stress and energy.' },
+    'giloy': { n: 'Giloy / Guduchi', s: 'Full Sun', w: 'Medium', f: 'The "Amrita" herb, famous for boosting immunity.' },
+    'moringa': { n: 'Moringa (Drumstick)', s: 'Full Sun', w: 'Low', f: 'A miracle tree; every part is packed with nutrition.' },
+    'neem': { n: 'Neem', s: 'Full Sun', w: 'Low', f: 'Nature’s pharmacy; used for skin, teeth, and pests.' },
+    'brahmi': { n: 'Brahmi', s: 'Shade', w: 'High', f: 'Known for enhancing memory and brain function.' },
+
+    // ORNAMENTAL
+    'snake-plant': { n: 'Snake Plant', s: 'Any Light', w: 'Low', f: 'One of the best plants for purifying indoor air.' },
+    'areca-palm': { n: 'Areca Palm', s: 'Indirect Sun', w: 'Medium', f: 'A natural humidifier and beautiful indoor palm.' },
+    'money-plant': { n: 'Money Plant', s: 'Partial Shade', w: 'Medium', f: 'Believed to bring prosperity and positive energy.' },
+    'hibiscus': { n: 'Hibiscus', s: 'Full Sun', w: 'High', f: 'Bright, tea-ready blooms that attract butterflies.' },
+    'marigold': { n: 'Marigold', s: 'Full Sun', w: 'Medium', f: 'Keeps garden pests away with its bright scent.' },
+    'rose': { n: 'Rose', s: 'Full Sun', w: 'Medium', f: 'The queen of flowers; needs pruning for best blooms.' },
+    'crown-of-thorns': { n: 'Crown of Thorns', s: 'Full Sun', w: 'Low', f: 'Beautiful red bracts that bloom almost year-round.' },
+    'ficus-starlight': { n: 'Ficus Starlight', s: 'Indirect Sun', w: 'Medium', f: 'Known for its stunning variegated white and green leaves.' },
+
+    // FRUITS & SPICES
+    'mango': { n: 'Mango', s: 'Full Sun', w: 'Medium', f: 'The King of Fruits; thrives in warm tropical climates.' },
+    'pomegranate': { n: 'Pomegranate', s: 'Full Sun', w: 'Low', f: 'Super-fruit full of antioxidants; very hardy.' },
+    'lemon': { n: 'Lemon / Lime', s: 'Full Sun', w: 'Medium', f: 'High in Vitamin C; great for pots or the ground.' },
+    'guava': { n: 'Guava', s: 'Full Sun', w: 'Medium', f: 'Produces sweet fruit and has medicinal leaves.' },
+    'chiku': { n: 'Chiku (Sapota)', s: 'Full Sun', w: 'Medium', f: 'Delicious brown fruit with a malty, sweet flavor.' },
+    'sandalwood': { n: 'White Sandalwood', s: 'Full Sun', w: 'Medium', f: 'Highly precious wood used for fragrance and oils.' },
+    'coffee': { n: 'Coffee Plant', s: 'Partial Shade', w: 'High', f: 'Produces fragrant white flowers and caffeine beans.' },
+    'banana': { n: 'Banana', s: 'Full Sun', w: 'High', f: 'Fast-growing; needs lots of water and nutrients.' },
+    'tamarind': { n: 'Tamarind', s: 'Full Sun', w: 'Low', f: 'Long-lived tree with tangy, medicinal fruit pods.' }
+};
+
         const id = new URLSearchParams(window.location.search).get('id');
         if (id && plants[id]) {
             document.getElementById('name').innerText = plants[id].n;
