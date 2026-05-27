@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Species Database</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            color: #2c5e43;
+            font-family: "Georgia", serif;
+            margin-bottom: 30px;
+        }
+        .directory-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .plant-link {
+            display: block;
+            background: white;
+            padding: 15px 20px;
+            color: #2c5e43;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+        }
+        .plant-link:hover {
+            transform: translateY(-2px);
+            background-color: #2c5e43;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Plant Species Database</h1>
+    
+    <nav class="directory-links">
+        <a href="coffee.html" class="plant-link">☕ Coffee (Coffea arabica)</a>
+        <a href="ajwain.html" class="plant-link">🌿 Ajwain (Trachyspermum ammi)</a>
+        <a href="stevia.html" class="plant-link">🍃 Stevia (Stevia rebaudiana)</a>
+        <a href="insulin-plant.html" class="plant-link">🍁 Insulin Plant (Costus igneus)</a>
+
+    </nav>
+
+</body>
+</html>
