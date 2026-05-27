@@ -45,4 +45,138 @@
             position: absolute; 
             top: 20px; 
             left: 20px; 
-            width:
+            width: 12px; 
+            height: 12px; 
+            background-color: #f5f5f5; 
+            border: 1px solid var(--border-color); 
+            border-radius: 50%; 
+        }
+        .header { 
+            text-align: right; 
+            margin-bottom: 16px; 
+        }
+        .badge { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            color: #7f8c8d; 
+            display: block; 
+            line-height: 1.2; 
+        }
+        .badge.primary { 
+            color: var(--primary-color); 
+            font-size: 0.85rem; 
+        }
+        .title-section { 
+            margin-bottom: 20px; 
+            padding-left: 20px; 
+        }
+        .main-title { 
+            font-family: "Georgia", serif; 
+            color: var(--primary-color); 
+            font-size: 2rem; 
+            font-weight: 400; 
+            margin: 0; 
+            line-height: 1.1; 
+        }
+        .botanical-name { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin: 4px 0 0 0; 
+        }
+        .botanical-name em { 
+            font-style: italic; 
+            font-weight: 600; 
+        }
+        .info-block { 
+            margin-bottom: 16px; 
+            font-size: 0.85rem; 
+            line-height: 1.45; 
+            color: var(--text-dark); 
+        }
+        .info-heading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .tag-icon {
+            font-size: 1.1rem;
+        }
+        .divider { 
+            border: 0; 
+            border-top: 1px dashed var(--border-color); 
+            margin: 16px 0; 
+        }
+        .footer { 
+            font-size: 0.65rem; 
+            font-style: italic; 
+            color: #999999; 
+            text-align: center; 
+            margin-top: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="database.html" class="back-btn">← Back to Database</a>
+
+    <article class="plant-tag">
+        <header class="header">
+            <span class="badge primary">Sweetener /</span>
+            <span class="badge">Herb</span>
+        </header>
+
+        <div class="title-section">
+            <h1 class="main-title">Stevia</h1>
+            <p class="botanical-name"><em>Stevia rebaudiana</em> - Sweet Leaf / Candyleaf</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">☀️</span>
+                <span>Full Sun to Part Shade</span>
+            </div>
+            <strong>Description:</strong> A tender perennial herbal shrub famous for its intensely sweet, lance-shaped green leaves, which are used as a natural calorie-free sugar substitute. Produces small, tubular white flowers in late summer.
+        </div>
+
+        <div class="info-block">
+            <strong>Maturity:</strong> Late Summer to Autumn (Harvest leaves just before flowering for maximum sweetness).
+        </div>
+
+        <div class="info-block">
+            <strong>Suggested Pollinators:</strong> Self-fertile, but yields benefit from visits by bees, butterflies, and wind-assisted pollen movement.
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">🪴</span>
+                <span>Well Drained, Rich Soil</span>
+            </div>
+            <strong>Herb Care:</strong> Plant in a loose, loamy soil rich in organic matter. Keep soil consistently moist but never waterlogged to protect its shallow root system. Feed with a balanced organic fertilizer. Protect from frost and pinch back growing tips regularly to promote a bushy growth habit.
+        </div>
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">📏</span>
+                <span>Height to 45CM - 60CM</span>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Picture and information intended only as a helpful guide.
+        </footer>
+    </article>
+
+</body>
+</html>
