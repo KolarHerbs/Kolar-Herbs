@@ -49,4 +49,135 @@
             height: 12px; 
             background-color: #f5f5f5; 
             border: 1px solid var(--border-color); 
-            border-radius
+            border-radius: 50%; 
+        }
+        .header { 
+            text-align: right; 
+            margin-bottom: 16px; 
+        }
+        .badge { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            color: #7f8c8d; 
+            display: block; 
+            line-height: 1.2; 
+        }
+        .badge.primary { 
+            color: var(--primary-color); 
+            font-size: 0.85rem; 
+        }
+        .title-section { 
+            margin-bottom: 20px; 
+            padding-left: 20px; 
+        }
+        .main-title { 
+            font-family: "Georgia", serif; 
+            color: var(--primary-color); 
+            font-size: 2rem; 
+            font-weight: 400; 
+            margin: 0; 
+            line-height: 1.1; 
+        }
+        .botanical-name { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin: 4px 0 0 0; 
+        }
+        .botanical-name em { 
+            font-style: italic; 
+            font-weight: 600; 
+        }
+        .info-block { 
+            margin-bottom: 16px; 
+            font-size: 0.85rem; 
+            line-height: 1.45; 
+            color: var(--text-dark); 
+        }
+        .info-heading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .tag-icon {
+            font-size: 1.1rem;
+        }
+        .divider { 
+            border: 0; 
+            border-top: 1px dashed var(--border-color); 
+            margin: 16px 0; 
+        }
+        .footer { 
+            font-size: 0.65rem; 
+            font-style: italic; 
+            color: #999999; 
+            text-align: center; 
+            margin-top: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="database.html" class="back-btn">← Back to Database</a>
+
+    <article class="plant-tag">
+        <header class="header">
+            <span class="badge primary">Medicinal /</span>
+            <span class="badge">Ornamental</span>
+        </header>
+
+        <div class="title-section">
+            <h1 class="main-title">Insulin Plant</h1>
+            <p class="botanical-name"><em>Costus igneus</em> - Fiery Costus / Spiral Flag</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">☀️</span>
+                <span>Part Shade to Full Sun</span>
+            </div>
+            <strong>Description:</strong> A vigorous, tropical perennial herb with large, smooth, dark green leaves arranged spirally along the stem. It produces striking, vibrant orange, cone-like flowers. Highly regarded in traditional medicine for its anti-diabetic properties.
+        </div>
+
+        <div class="info-block">
+            <strong>Maturity:</strong> Flowers consistently during the warm months, primarily from late Summer through Autumn. Leaves can be harvested year-round once the plant is established.
+        </div>
+
+        <div class="info-block">
+            <strong>Suggested Pollinators:</strong> Primarily pollinated by bees and butterflies, attracted to its brightly colored, nectar-rich orange blooms.
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">🪴</span>
+                <span>Moist, Well Drained Soil</span>
+            </div>
+            <strong>Plant Care:</strong> Thrives in rich, organic, slightly acidic soil. Requires a warm, humid environment with consistent moisture; do not allow the soil to dry out completely. Best planted in partial shade to protect leaves from scorching. Prune spent flower stems and old stalks down to the base to encourage fresh growth.
+        </div>
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">📏</span>
+                <span>Height to 60CM - 1.2M</span>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Picture and information intended only as a helpful guide.
+        </footer>
+    </article>
+
+</body>
+</html>
+
