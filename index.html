@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolar Herbs - Rooted in Nature, Grown for You</title>
+    <style>
+        :root {
+            --primary-color: #2c5e43;
+            --secondary-color: #4b8664;
+            --accent-color: #8bb397;
+            --text-dark: #1e3327;
+            --text-light: #526659;
+            --bg-light: #fafcfb;
+            --card-shadow: 0 10px 30px rgba(44, 94, 67, 0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Subtle decorative organic background mesh */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(139, 179, 151, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 10% 80%, rgba(75, 134, 100, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .main-container {
+            max-width: 480px;
+            width: 100%;
+            padding: 40px 24px;
+            box-sizing: border-box;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* Brand Logo Header Box */
+        .logo-box {
+            background: white;
+            padding: 16px;
+            border-radius: 24px;
+            box-shadow: var(--card-shadow);
+            display: inline-block;
+            margin-bottom: 28px;
+            border: 1px solid rgba(44, 94, 67, 0.05);
+        }
+
+        .brand-logo {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Taglines and Typography */
+        .badge-tagline {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .main-tagline {
+            font-family: "Georgia", serif;
+            font-size: 1.65rem;
+            color: var(--primary-color);
+            line-height: 1.3;
+            margin: 0 0 35px 0;
+            font-weight: 400;
+        }
+
+        /* Core Navigation Links Layout */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 45px;
+        }
+
+        .action-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 18px 24px;
+            border-radius: 16px;
+            text-decoration: none;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(44, 94, 67, 0.03);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .action-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(44, 94, 67, 0.12);
+            border-color: var(--accent-color);
+        }
+
+        /* Distinct styling for the primary structural database button */
+        .action-card.primary-hub {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border: none;
+        }
+
+        .action-card.primary-hub .card-title { color: white; }
+        .action-card.primary-hub .card-subtitle { color: rgba(255, 255, 255, 0.75); }
+        .action-card.primary-hub .card-arrow { color: white; background: rgba(255, 255, 255, 0.15); }
+
+        .card-text-group {
+            text-align: left;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 3px 0;
+        }
+
+        .card-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .card-arrow {
+            width: 32px;
+            height: 32px;
+            background: #f0f5f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .action-card:hover .card-arrow {
+            transform: translateX(4px);
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        /* Footer styling */
+        .footer-brand {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            opacity: 0.7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        
+        <div class="logo-box">
+            <img src="data:image/jpeg;base64," alt="Kolar Herbs Logo" class="brand-logo">
+        </div>
+        
+        <span class="badge-tagline">fresh &bull; herbal &bull; organic</span>
+        <h1 class="main-tagline">Rooted in nature,<br>grown for you</h1>
+
+        <div class="links-wrapper">
+            
+            <a href="database.html" class="action-card primary-hub">
+                <div class="card-text-group">
+                    <p class="card-title">Plant Database</p>
+                    <p class="card-subtitle">Browse identification & digital tags</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+
+            <div class="section-title">Also Find Us At</div>
+
+            <a href="https://www.kolarherbs.com/" target="_blank" class="action-card">
+                <div class="card-text-group">
+                    <p class="card-title">Official E-Commerce Shop</p>
+                    <p class="card-subtitle">Buy organic herbs & fresh products</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+
+            <a href="https://www.kolarherbs.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcASDnglleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadSpe7Z760uMFLX7ELZuuGB0SEWSzHdhA-4fN7qkHX55ZcWn0gP47xp7R3CoQ_aem_YWdncwDWlIzD_C9JRupsFy0iXypY&brid=YWdncwGQXOe6FHoeyVcymthxz2il" target="_blank" class="action-card">
+                <div class="card-text-group">
+                    <p class="card-title">Instagram Community</p>
+                    <p class="card-subtitle">Follow our organic garden journey</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+
+        </div>
+
+        <footer class="footer-brand">
+            &copy; 2026 Kolar Herbs. All Rights Reserved.
+        </footer>
+
+    </main>
+
+</body>
+</html>
