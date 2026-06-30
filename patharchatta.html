@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patharchatta - Plant Tag</title>
+    <style>
+        :root { 
+            --primary-color: #2c5e43; 
+            --text-dark: #333333; 
+            --text-muted: #666666; 
+            --bg-card: #ffffff; 
+            --border-color: #e0e0e0; 
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+            background-color: #f5f5f5; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .back-btn { 
+            margin-bottom: 20px; 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            font-weight: bold; 
+        }
+        .plant-tag { 
+            background-color: var(--bg-card); 
+            width: 320px; 
+            padding: 24px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            border: 1px solid var(--border-color); 
+            position: relative; 
+            box-sizing: border-box; 
+        }
+        .plant-tag::before { 
+            content: ''; 
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            width: 12px; 
+            height: 12px; 
+            background-color: #f5f5f5; 
+            border: 1px solid var(--border-color); 
+            border-radius: 50%; 
+        }
+        .header { 
+            text-align: right; 
+            margin-bottom: 16px; 
+        }
+        .badge { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            color: #7f8c8d; 
+            display: block; 
+            line-height: 1.2; 
+        }
+        .badge.primary { 
+            color: var(--primary-color); 
+            font-size: 0.85rem; 
+        }
+        .title-section { 
+            margin-bottom: 20px; 
+            padding-left: 20px; 
+        }
+        .main-title { 
+            font-family: "Georgia", serif; 
+            color: var(--primary-color); 
+            font-size: 2rem; 
+            font-weight: 400; 
+            margin: 0; 
+            line-height: 1.1; 
+        }
+        .botanical-name { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin: 4px 0 0 0; 
+        }
+        .botanical-name em { 
+            font-style: italic; 
+            font-weight: 600; 
+        }
+        .info-block { 
+            margin-bottom: 16px; 
+            font-size: 0.85rem; 
+            line-height: 1.45; 
+            color: var(--text-dark); 
+        }
+        .info-heading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .tag-icon {
+            font-size: 1.1rem;
+        }
+        .divider { 
+            border: 0; 
+            border-top: 1px dashed var(--border-color); 
+            margin: 16px 0; 
+        }
+        .footer { 
+            font-size: 0.65rem; 
+            font-style: italic; 
+            color: #999999; 
+            text-align: center; 
+            margin-top: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="database.html" class="back-btn">← Back to Database</a>
+
+    <article class="plant-tag">
+        <header class="header">
+            <span class="badge primary">Medicinal /</span>
+            <span class="badge">Succulent</span>
+        </header>
+
+        <div class="title-section">
+            <h1 class="main-title">Patharchatta</h1>
+            <p class="botanical-name"><em>Bryophyllum pinnatum</em> - Miracle Leaf / Air Plant</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">☀️</span>
+                <span>Full Sun to Part Shade</span>
+            </div>
+            <strong>Description:</strong> A remarkable, fleshy succulent perennial noted for its thick, scalloped green leaves. It is famous for vegetative propagation, where tiny plantlets naturally develop along the margins of detached leaves. Highly utilized in traditional medicine for treating kidney stones and inflammation.
+        </div>
+
+        <div class="info-block">
+            <strong>Maturity:</strong> Grows quickly year-round. It produces drooping, bell-shaped greenish-purple flowers primarily during the winter and early spring seasons once mature.
+        </div>
+
+        <div class="info-block">
+            <strong>Suggested Pollinators:</strong> Primarily pollinated by insects such as bees and butterflies, though it relies heavily on its unique leaf-margin plantlets to reproduce and spread.
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">🪴</span>
+                <span>Sandy, Extremely Well Drained Soil</span>
+            </div>
+            <strong>Plant Care:</strong> Thrives in porous, sandy-loam or standard cactus soil mixes. Highly drought-tolerant due to water stored in its fleshy leaves. Water only when the topsoil feels completely dry; overwatering easily triggers root and stem rot. Protect from severe winter frost.
+        </div>
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">📏</span>
+                <span>Height to 90CM - 1.2M</span>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Picture and information intended only as a helpful guide.
+        </footer>
+    </article>
+
+</body>
+</html>
