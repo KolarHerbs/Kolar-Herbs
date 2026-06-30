@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrajal - Plant Tag</title>
+    <style>
+        :root { 
+            --primary-color: #2c5e43; 
+            --text-dark: #333333; 
+            --text-muted: #666666; 
+            --bg-card: #ffffff; 
+            --border-color: #e0e0e0; 
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+            background-color: #f5f5f5; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .back-btn { 
+            margin-bottom: 20px; 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            font-weight: bold; 
+        }
+        .plant-tag { 
+            background-color: var(--bg-card); 
+            width: 320px; 
+            padding: 24px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            border: 1px solid var(--border-color); 
+            position: relative; 
+            box-sizing: border-box; 
+        }
+        .plant-tag::before { 
+            content: ''; 
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            width: 12px; 
+            height: 12px; 
+            background-color: #f5f5f5; 
+            border: 1px solid var(--border-color); 
+            border-radius: 50%; 
+        }
+        .header { 
+            text-align: right; 
+            margin-bottom: 16px; 
+        }
+        .badge { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            color: #7f8c8d; 
+            display: block; 
+            line-height: 1.2; 
+        }
+        .badge.primary { 
+            color: var(--primary-color); 
+            font-size: 0.85rem; 
+        }
+        .title-section { 
+            margin-bottom: 20px; 
+            padding-left: 20px; 
+        }
+        .main-title { 
+            font-family: "Georgia", serif; 
+            color: var(--primary-color); 
+            font-size: 2rem; 
+            font-weight: 400; 
+            margin: 0; 
+            line-height: 1.1; 
+        }
+        .botanical-name { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin: 4px 0 0 0; 
+        }
+        .botanical-name em { 
+            font-style: italic; 
+            font-weight: 600; 
+        }
+        .info-block { 
+            margin-bottom: 16px; 
+            font-size: 0.85rem; 
+            line-height: 1.45; 
+            color: var(--text-dark); 
+        }
+        .info-heading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .tag-icon {
+            font-size: 1.1rem;
+        }
+        .divider { 
+            border: 0; 
+            border-top: 1px dashed var(--border-color); 
+            margin: 16px 0; 
+        }
+        .footer { 
+            font-size: 0.65rem; 
+            font-style: italic; 
+            color: #999999; 
+            text-align: center; 
+            margin-top: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="database.html" class="back-btn">← Back to Database</a>
+
+    <article class="plant-tag">
+        <header class="header">
+            <span class="badge primary">Medicinal /</span>
+            <span class="badge">Sacred Shrub</span>
+        </header>
+
+        <div class="title-section">
+            <h1 class="main-title">Indrajal</h1>
+            <p class="botanical-name"><em>Wrightia antidysenterica</em> - Coral Swirl / Arctic Snow</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">☀️</span>
+                <span>Full Sun to Part Shade</span>
+            </div>
+            <strong>Description:</strong> A beautiful, compact evergreen perennial shrub featuring smooth, ovate dark green leaves. It produces endless clusters of star-like, pure white blossoms. Historically held in high regard in ethnobotanical traditions for digestive and skin wellness remedies.
+        </div>
+
+        <div class="info-block">
+            <strong>Maturity:</strong> Known for a highly prolonged blooming season, producing showy white flowers almost continuously throughout the warmer months from Spring to late Autumn.
+        </div>
+
+        <div class="info-block">
+            <strong>Suggested Pollinators:</strong> Attracts an abundance of honeybees, moths, and delicate butterflies to its prominent, open white floral clusters.
+        </div>
+
+        <hr class="divider">
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">🪴</span>
+                <span>Rich, Well Drained, Fertile Soil</span>
+            </div>
+            <strong>Shrub Care:</strong> Prefers consistently moist, organic-rich, well-aerated soil blends. Water thoroughly when the surface soil layer begins to dry out; avoid soggy or waterlogged pots to prevent root rot. Responds beautifully to light, occasional pruning to maintain a bushy, compact form. Protect from severe frost.
+        </div>
+
+        <div class="info-block">
+            <div class="info-heading">
+                <span class="tag-icon">📏</span>
+                <span>Height to 1.2M - 2M</span>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Picture and information intended only as a helpful guide.
+        </footer>
+    </article>
+
+</body>
+</html>
